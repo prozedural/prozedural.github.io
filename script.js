@@ -1,11 +1,10 @@
 var canvas    = document.querySelector('canvas');
 var ctx       = canvas.getContext('2d');
+
 var beginPath = false;
 
 canvas.width  = window.innerWidth;
 canvas.height = window.innerHeight;
-
-var stroke = 150;
 
 
 function randomColor() {
@@ -38,17 +37,24 @@ document.body.addEventListener('mousemove', function (event) {
     gradient.addColorStop("0", colorA);
     gradient.addColorStop("0.5" ,colorB);
     gradient.addColorStop('1', colorC);
+    
 
         
     if (beginPath) {
-		ctx.lineTo(x, y);
+        
+        /*ctx.setLineDash([1, 13]);*/
+
+        ctx.lineTo(x, y);
 		ctx.stroke();
         ctx.strokeStyle = gradient;
-        ctx.lineWidth = Math.round(stroke);
+        ctx.lineWidth = 400;
         
-	} else {
+        
+    } 
+    else {
 		ctx.beginPath();
 		ctx.moveTo(x, y);
-		beginPath = true;
+        beginPath = true;
+    
 	}
 }, false);

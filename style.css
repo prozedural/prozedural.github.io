@@ -19,7 +19,9 @@ a:link, a:visited {
 .logo {
     margin: auto;
     text-align: center;
-    font-size: 12em;
+    font-size: 12vw;
+    font-family: 'Abril Fatface', cursive;
+
 }
 
 canvas { 
