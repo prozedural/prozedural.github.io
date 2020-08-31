@@ -20,7 +20,6 @@ a:link, a:visited {
 canvas { 
     position: absolute; 
     z-index: -10;
-    /*background-color:#ccc;*/
 }
 
 #info {
@@ -51,7 +50,6 @@ li.icon_github:before {
 
 li.icon_behance:before {
     content: "\f1b4"; /* FontAwesome Unicode */
-    font-family: FontAwesome;
 }
 
 
@@ -64,4 +62,4 @@ h1 {
     margin: auto;
     text-align: center;
     font-size: 12em;
-  }
+}
