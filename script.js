@@ -5,7 +5,7 @@ var beginPath = false;
 canvas.width  = window.innerWidth;
 canvas.height = window.innerHeight;
 
-var randomStroke = Math.random()*150;
+var stroke = 150;
 
 
 function randomColor() {
@@ -25,8 +25,10 @@ var colorA = randomColor();
 var colorB = randomColor();
 var colorC = randomColor();
 
-document.getElementById('cvs').style.backgroundColor = grayColor();
+var gray = grayColor();
 
+document.getElementById('cvs').style.backgroundColor = gray;
+document.getElementsByClassName('logo')[0].style.color = gray;
 
 
 document.body.addEventListener('mousemove', function (event) {
@@ -42,7 +44,7 @@ document.body.addEventListener('mousemove', function (event) {
 		ctx.lineTo(x, y);
 		ctx.stroke();
         ctx.strokeStyle = gradient;
-        ctx.lineWidth = Math.round(randomStroke);
+        ctx.lineWidth = Math.round(stroke);
         
 	} else {
 		ctx.beginPath();

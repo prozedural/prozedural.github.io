@@ -58,3 +58,10 @@ li.icon_behance:before {
 h1 {
     font-size: 30px;
 }
+
+
+.logo {
+    margin: auto;
+    text-align: center;
+    font-size: 12em;
+  }
