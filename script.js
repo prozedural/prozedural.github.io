@@ -21,12 +21,12 @@ function grayColor() {
 }
 
 
-
 var colorA = randomColor();
 var colorB = randomColor();
 var colorC = randomColor();
 
 document.getElementById('cvs').style.backgroundColor = grayColor();
+
 
 
 document.body.addEventListener('mousemove', function (event) {
