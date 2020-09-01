@@ -29,7 +29,6 @@ var gray = grayColor();
 document.getElementById('cvs').style.backgroundColor = gray;
 document.getElementsByClassName('logo')[0].style.color = gray;
 
-
 document.body.addEventListener('mousemove', function (event) {
 	var x = event.clientX, y = event.clientY;
     var gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
