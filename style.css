@@ -16,18 +16,6 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-.logo {
-    margin: auto;
-    text-align: center;
-    font-size: 12vw;
-    font-family: 'Abril Fatface', cursive;
-
-}
-
-canvas { 
-    position: absolute; 
-    z-index: -10;
-}
 
 #info {
     padding: 50px;
@@ -61,5 +49,5 @@ li.icon_behance:before {
 
 
 h1 {
-    font-size: 30px;
+    font-size: 40px;
 }
